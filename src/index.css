@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  background-color: greenyellow;
+  width: 70vw;
+  margin: 1rem;
+  border: 1px solid gray;
+}
+
+header{
+  display:inline-flex;
+  width: 100vw;
+}
+header button{
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}

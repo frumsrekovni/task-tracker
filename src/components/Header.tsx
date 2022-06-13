@@ -4,6 +4,7 @@ const Header = ({title}) => {
   return (
    <header>
     <h1 style= {headerStyle}>{title}</h1>
+    <button>Add</button>
    </header>
   )
 }
