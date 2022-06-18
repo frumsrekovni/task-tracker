@@ -1,8 +1,19 @@
 //rafce
-const Task = ({task}) => {
+
+// This is the specific X icon. Is there not a way to style the color of this icon in a separate CSS file?
+import{FaTimes} from "react-icons/fa"
+
+
+// onDelete is passed on from the Tasks component. In a way the app stretches all the way down to this component to be available when the onClick happens.
+// and when onClick activates a function is called where onDelete is run with the parameter of the current task's id
+const Task = ({task, onDelete}) => {
   return (
     <div className="task">
-        <h3>{task.text}</h3>
+        <h3>
+          {task.text} 
+          <FaTimes style={{color:"gold", cursor:'pointer'}} onClick={() => onDelete(task.id)}></FaTimes>
+          
+        </h3>
         <p>{task.day}</p>
     </div>
   )

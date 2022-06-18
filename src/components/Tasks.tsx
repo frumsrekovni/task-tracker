@@ -6,11 +6,11 @@ import Task from './Task.tsx'
 //const Tasks = (props) => {
 // This is an alternative
 // Current is a destructure
-const Tasks = ({tasks}) => {
+const Tasks = ({tasks, onDelete}) => {
   return (
     <div>
     {tasks.map((task) => (
-    <Task key={task.id} task={task}></Task> ))} 
+    <Task key={task.id} task={task} onDelete={onDelete}></Task> ))} 
     </div>
   )
 }
