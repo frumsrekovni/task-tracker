@@ -29,6 +29,7 @@ header button{
   text-decoration: none;
 }
 
-.task{
-  
+.xicon{
+  color: red;
+  cursor:pointer;
 }

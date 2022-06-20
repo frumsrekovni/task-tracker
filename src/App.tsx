@@ -44,6 +44,10 @@ function deleteTask2(id:number){
   setTasks(tasks.filter((task) => task.id !== id));
 }
 
+function toggle(id:number){
+  setTasks(tasks.map((task) => task.id === id ? {...task, reminder:!task.reminder} : task))
+}
+
 // Putting if statements down here with different portions of
 // html in each case is the benefit of using React.
   return (
@@ -52,7 +56,7 @@ function deleteTask2(id:number){
       <h2>Ternary operator: {x ? 'ef' : 'sfd'}</h2>
       {tasks.length > 0 ? 
       (
-      <Tasks tasks={tasks} onDelete={deleteTask2}/>
+      <Tasks tasks={tasks} onDelete={deleteTask2} onToggle={toggle}/>
       ):
       (
       "No tasks set"
