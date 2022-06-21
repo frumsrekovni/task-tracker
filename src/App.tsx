@@ -45,7 +45,7 @@ function deleteTask2(id:number){
 }
 
 function toggle(id:number){
-  setTasks(tasks.map((task) => task.id === id ? {...task, reminder:!task.reminder} : task))
+  setTasks(tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task))
 }
 
 // Putting if statements down here with different portions of

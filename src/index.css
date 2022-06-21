@@ -33,3 +33,13 @@ header button{
   color: red;
   cursor:pointer;
 }
+.task {
+  background: rgb(158,189,238);
+  background: linear-gradient(135deg, rgba(158,189,238,1) 0%, rgba(238,238,241,1) 100%);
+  margin: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.task.reminder {
+  border: 5px solid rgb(165, 13, 119);
+}
