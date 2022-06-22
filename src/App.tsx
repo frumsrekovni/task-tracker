@@ -3,6 +3,7 @@ import { useState } from "react"
 // because you might want to use it in other components than just the tasks component
 import Header from './components/Header.tsx'
 import Tasks from './components/Tasks.tsx'
+import Add from './components/Add.tsx'
 function App() {
   // You can write Typescript up here
   const name:string = "Joshua"
@@ -53,6 +54,7 @@ function toggle(id:number){
   return (
     <div className="App">
       <Header title='Jello' />
+      <Add></Add>
       <h2>Ternary operator: {x ? 'ef' : 'sfd'}</h2>
       {tasks.length > 0 ? 
       (
