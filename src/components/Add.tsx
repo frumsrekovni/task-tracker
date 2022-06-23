@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 const Add = () => {
+  const [day, setDay] = useState("");
   return (
     <form className="task-form">
         <div className="form-comp">
