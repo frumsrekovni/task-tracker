@@ -45,6 +45,11 @@ function deleteTask2(id:number){
   setTasks(tasks.filter((task) => task.id !== id));
 }
 
+function addTask(task){
+  // Each task should have an id. Just make a random number.
+  const id:number = Math.floor(Math.random()*10000);
+}
+
 function toggle(id:number){
   setTasks(tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task))
 }
