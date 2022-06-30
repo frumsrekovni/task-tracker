@@ -48,6 +48,10 @@ function deleteTask2(id:number){
 function addTask(task){
   // Each task should have an id. Just make a random number.
   const id:number = Math.floor(Math.random()*10000);
+  // Actully create a task
+  const newTask = {id, ...task};
+  // Take this newly made task and set it at the same place as all the other tasks
+  setTasks([...tasks, newTask]);
 }
 
 function toggle(id:number){
