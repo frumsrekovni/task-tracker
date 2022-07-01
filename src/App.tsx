@@ -63,7 +63,7 @@ function toggle(id:number){
   return (
     <div className="App">
       <Header title='Jello' />
-      <Add></Add>
+      <Add onAdd={addTask} ></Add>
       <h2>Ternary operator: {x ? 'ef' : 'sfd'}</h2>
       {tasks.length > 0 ? 
       (
