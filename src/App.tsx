@@ -52,6 +52,7 @@ function addTask(task){
   const newTask = {id, ...task};
   // Take this newly made task and set it at the same place as all the other tasks
   setTasks([...tasks, newTask]);
+  console.log(id);
 }
 
 function toggle(id:number){
@@ -63,7 +64,7 @@ function toggle(id:number){
   return (
     <div className="App">
       <Header title='Jello' />
-      <Add onAdd={addTask} ></Add>
+      <Add marflepop={addTask}></Add>
       <h2>Ternary operator: {x ? 'ef' : 'sfd'}</h2>
       {tasks.length > 0 ? 
       (
