@@ -8,7 +8,7 @@ function App() {
   // You can write Typescript up here
   const name:string = "Joshua"
   const x:Boolean=false;
-
+  const [showAddTask, setShowAddTask] = useState;
   // Here the variable "setTasks" is defined in a very javascript magic way
   const [tasks, setTasks] = useState([
     {

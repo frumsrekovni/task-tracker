@@ -3,7 +3,7 @@ import Button from './Button.tsx'
 const Header = ({title}) => {
   return (
    <header>
-    <h1 style= {headerStyle}>{title}</h1>
+    <h1 style={headerStyle}>{title}</h1>
     <Button color='pink' text='Add task'></Button>
    </header>
   )
